@@ -1,13 +1,12 @@
 nav {
-    color: blue;
+    background-color: steelblue;
     padding: 10px;
 }
 
 nav a {
     color: #eee;
-    padding: 10px;
+    padding: 20px;
     display: block;
-    background-color: rgb(67, 125, 183);
 }
 
 h1{
