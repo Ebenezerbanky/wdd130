@@ -43,16 +43,19 @@ header {
     background-color: #e6e6fa;
     padding: 40px;
     text-align: center;
+    position: relative;
 }
 
 .hero img {
     width: 100px;
     height: auto;
+    float: right;
 }
 
 .hero h1 {
     font-size: 2.5em;
     margin: 20px 0;
+    position: absolute;
 }
 
 .hero p {
@@ -112,4 +115,8 @@ footer {
 .social-links {
     display: flex;
     gap: 20px;
+}
+
+.social-links img {
+    text-decoration: none;
 }
