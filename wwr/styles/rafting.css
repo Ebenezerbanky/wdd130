@@ -1,122 +1,300 @@
-/* General */
+/* Importing fonts from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Oswald&display=swap');
 
-
-:root {
-    --primary-color: #3498db; /* Adjust to your color scheme */
-    --secondary-color: #2ecc71;
-    --accent-color: #e74c3c;
-    --background-color: #f4f4f4;
-    --font-color: #191919;
-}
-
-body {
-    font-family: 'Roboto', sans-serif;
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-header {
-    background-color: steelblue;
-    padding: 20px;
+/* Root CSS variables for easy theme management */
+:root {
+   
+    /* Dark color for primary text */
+    --primary-color: #4d4c49;
+    
+    /* Secondary color, slightly lighter */
+    --secondary-color: #484029;
+    
+    /* Accent color 1 */
+    --accent1-color: #484029;
+   
+    /* Accent color 2 */
+     --accent2-color: #37471e;
+
+    
+    /* White color */
+    --white: #f3eded;
+   
+    /* Black color */
+    --black: #0e0c0c;
+
+    /* Button Background colors */
+    --button-color: #e38d0d;
+    --button-color-hover: #f3a530;
+
+    /* Top Navigation Colors */
+    /* Background color for navigation bar */
+    --nav-background-color: var(--accent2-color);
+    /* Color for navigation links */
+    --nav-link-color: #fff;
+    /* Hover color for links */
+    --nav-hover-link-color: var(--accent2-color);
+    /* Background color on hover for navigation links */
+    --nav-hover-background-color: #fff;
+
+    /* Font for headings */
+    --heading-font: 'Arvo', 'sans-serif';
+    /* Font for paragraphs */
+    --paragraph-font: 'Oswald', 'sans-serif';
 }
 
-.nav-bar {
+
+body {
+    font-family: var(--paragraph-font);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+h5 {
+    font-size: 1.25rem;
+}
+
+h6 {
+    font-size: 1rem;
+}
+
+p {
+    padding: 10px;
+    color: #000;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+header, main, footer {
+    max-width: 1280px;
+    margin: auto;
+}
+
+
+header {
+    display: grid;
+    grid-template-columns: 200px auto;
+    align-items: center;
+    background-color: #170b6e;
+}
+
+nav {
+    display: flex;
+    font-family: var(--heading-font);
+    text-decoration: none;
+    justify-content: space-around;
+}
+
+nav a {
+    display: flex;
+    padding: 0.5rem;
+    margin: -0.14rem;
+    font-family: var(--heading-font);
+    color: #fff;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #fff;
+    color: #b91d3a;
+}
+
+footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 1rem;
+    background-color: #242321;
+    margin-top: 100px;
 }
 
-.nav-bar ul {
-    list-style-type: none;
-    display: flex;
-    gap: 20px;
+
+/* Footer  */
+footer p {
+    color: #fff;
 }
 
-.nav-bar a {
+.footer-menu {
+    color: #fff;
     text-decoration: none;
-    font-weight: bold;
 }
 
-/* Hero Section */
+/* Social media */
+.sociallinks {
+    display: flex;
+    gap: 1rem;
+}
+
+.sociallinks img {
+    width: 2rem;
+}
+
+.sociallinks a:hover {
+    background-color: unset;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    align-items: center;
+}
+
+
 .hero {
-    background-color: #e6e6fa;
-    padding: 40px;
-    text-align: center;
     position: relative;
 }
 
-.hero img {
-    width: 100px;
-    height: auto;
-    float: right;
+.hero>img {
+    display: block;
+    width: 100%;
 }
 
-.hero h1 {
-    font-size: 2.5em;
-    margin: 20px 0;
+
+
+
+
+/* about us styling */
+.abs-heading1 {
     position: absolute;
+    top: 10px;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
-.hero p {
-    font-size: 1.2em;
+.abs-article {
+    background-color: rgba(255, 255, 255, .35);
+    position: absolute;
+    top: 6rem;
+    left: 6rem;
+    right: 6rem;
 }
 
-/* History Section */
+.abs-article img {
+    float: right;
+    margin: 2rem;
+    width: 15rem;
+}
+
+.abs-article p {
+    color: #fff;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    font-size: x-large;
+    text-align: center;
+}
+
+
+
+
+
+.history-section {
+    margin: 50px 0;
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    /* This creates three columns */
+    gap: 20px;
+    /* This is the gap between columns */
+    align-items: center;
+    text-align: justify;
+}
+
+.history-img {
+    grid-column: 2 / 3;
+    grid-row: 2;
+    /* This places the image in the center column */
+}
+
+.history-section p:first-of-type {
+    grid-column: 1 / 2;
+    grid-row: 2;
+    padding: 0 20px;
+}
+
+.history-section p:last-of-type {
+    grid-column: 3 / 4;
+    grid-row: 2;
+    padding: 0 20px;
+}
+
+
+.history-section>h2 {
+    grid-column: 1 / -1;
+    grid-row: 1;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.adventures {
+    margin: 50px 0;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+    justify-items: center;
+}
+
+.history h2, .adventures h2 {
+    grid-column: 1/-1;
+    justify-self: center;
+    padding: 1em 0;
+}
+
+figure:nth-of-type(odd) {
+    background-color: var(--accent1-color);
+    color: var(--nav-link-color);
+    align-self: center;
+}
+
+figure:nth-of-type(even) {
+    background-color: var(--accent2-color);
+    color: var(--nav-link-color);
+    align-self: center;
+}
+
+figcaption {
+    text-align: center;
+    padding: 1em 0;
+}
+
 .history {
-    padding: 40px;
-    text-align: center;
-    color: steelblue;
-}
-
-.history-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-}
-
-.history-content img {
-    width: 150px;
-    height: auto;
-}
-
-/* Adventure Section */
-.adventure {
-    padding: 40px;
-    background-color: #f5f5f5;
-    text-align: center;
-}
-
-.adventure-images {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.adventure-images img {
-    width: 100px;
-    height: auto;
-}
-
-/* Footer */
-footer {
-    background-color: steelblue;
-    padding: 20px;
-    text-align: center;
-}
-
-.footer-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.social-links {
-    display: flex;
-    gap: 20px;
-}
-
-.social-links img {
-    text-decoration: none;
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    gap: 2em;
+    margin: 50px 0;
 }
