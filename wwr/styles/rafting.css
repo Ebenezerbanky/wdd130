@@ -4,42 +4,39 @@
     box-sizing: border-box;
 }
 
-/* Root CSS variables for easy theme management */
 :root {
    
-    /* Dark color for primary text */
+   
     --primary-color: #4d4c49;
     
-    /* Secondary color, slightly lighter */
+    
     --secondary-color: #692d67;
     
-    /* Accent color 1 */
+  
     --accent1-color: #484029;
    
-    /* Accent color 2 */
+  
      --accent2-color: #37471e;
 
     
-    /* White color */
+   
     --white: #f3eded;
    
-    /* Black color */
+  
     --black: #0e0c0c;
 
 
-    /* Top Navigation Colors */
-    /* Background color for navigation bar */
+   
     --nav-background-color: var(--accent2-color);
-    /* Color for navigation links */
+
     --nav-link-color: #fff;
-    /* Hover color for links */
+
     --nav-hover-link-color: var(--accent2-color);
-    /* Background color on hover for navigation links */
+
     --nav-hover-background-color: #fff;
 
-    /* Font for headings */
     --heading-font: 'Arvo', 'sans-serif';
-    /* Font for paragraphs */
+
     --paragraph-font: 'Oswald', 'sans-serif';
 }
 
@@ -183,8 +180,8 @@ footer p {
 
 
 
-/* about us styling */
-.abs-heading1 {
+/* about us*/
+.heading1 {
     position: absolute;
     top: 10px;
     width: 100%;
@@ -193,7 +190,7 @@ footer p {
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
-.abs-article {
+.article {
     background-color: rgba(255, 255, 255, .35);
     position: absolute;
     top: 6rem;
@@ -201,13 +198,13 @@ footer p {
     right: 6rem;
 }
 
-.abs-article img {
+.article img {
     float: right;
     margin: 2rem;
     width: 15rem;
 }
 
-.abs-article p {
+.article p {
     color: #fff;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
     font-size: x-large;
@@ -222,9 +219,7 @@ footer p {
     margin: 50px 0;
     display: grid;
     grid-template-columns: 2fr 1fr 2fr;
-    /* This creates three columns */
     gap: 20px;
-    /* This is the gap between columns */
     align-items: center;
     text-align: justify;
 }
@@ -232,7 +227,6 @@ footer p {
 .history-img {
     grid-column: 2 / 3;
     grid-row: 2;
-    /* This places the image in the center column */
 }
 
 .history-section p:first-of-type {
