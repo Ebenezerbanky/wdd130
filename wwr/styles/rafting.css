@@ -317,6 +317,30 @@ input, label, textarea, select {
     font-size: 18px;
 }
 
+/* Radio Button Styling */
+input[type="radio"] {
+    margin-right: 10px;
+    transform: scale(1.2); /* Make the radio buttons a bit larger */
+    vertical-align: middle;
+}
+
+label[for="general"], 
+label[for="reservation"], 
+label[for="suggestion"] {
+    display: inline-block;
+    margin-bottom: 10px;
+    font-weight: normal;
+    color: #0c1199;
+    letter-spacing: .5px;
+}
+
+/* Align radio buttons and labels for better spacing */
+.radio-group {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Regular label styling */
 label {
     margin-top: 20px;
     margin-bottom: 5px;
@@ -335,6 +359,11 @@ input:focus, textarea:focus, select:focus {
     color: #5a2f54;
 }
 
+/* Style for better form spacing */
+fieldset {
+    border: none;
+    padding: 0;
+}
 .submit {
     padding: 1.5em;
     margin: 1em;

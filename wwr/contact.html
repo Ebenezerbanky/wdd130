@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us | Dry Oar Rafting</title>
-    <meta name="description" content="This is the contact us page for the rafting site.">
-    <meta name="author" content="Ralph Borcherds">
+    <title>Contact Us | Naija Rafting</title>
+    <meta name="description" content="A contact us page for my rafting site.">
+    <meta name="author" content="Bankole Ebenezer">
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
@@ -24,26 +24,39 @@
         <img src="images/rafting33_600.webp" alt="little" class="con-hero">
         <form action="#" class="contact">
             <fieldset class="contact-fields">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="from">
-                <label for="email">e-Mail</label>
-                <input type="email" name="email" id="email">
-                <label for="reason">Reason for contacting us?</label>
-                <select name="reason" id="reason">
-                    <option value="" selected disabled>-- Please select One -- </option>
-                    <option value="general">General Inquiry</option>
-                    <option value="reservation">Reservation Question </option>
-                    <option value="suggestion">Website Suggestion/option>
-                </select>
-                <label for="comment">Please enter your comment:</label>
-                <textarea name="comment" id="comment" cols="35" rows="10"></textarea>
-                <div class="signup">
-                    <input type="checkbox" name="subscribe" id="newsletter">
-                    <label for="newsletter">Please subscribe me to the monthly newsletter</label>
-                </div>
+              <!-- Name Input -->
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="from">
+          
+              <!-- Email Input -->
+              <label for="email">e-Mail:</label>
+              <input type="email" name="email" id="email">
+          
+              <!-- Reason for Contacting (Radio Buttons) -->
+              <label>Reason for contacting us?</label><br>
+              <input type="radio" id="general" name="reason" value="general">
+              <label for="general">General Inquiry</label><br>
+              
+              <input type="radio" id="reservation" name="reason" value="reservation">
+              <label for="reservation">Reservation Question</label><br>
+              
+              <input type="radio" id="suggestion" name="reason" value="suggestion">
+              <label for="suggestion">Website Suggestion</label><br><br>
+          
+              <!-- Comment Section -->
+              <label for="comment">Please enter your comment:</label>
+              <textarea name="comment" id="comment" cols="35" rows="10"></textarea>
+          
+              <!-- Newsletter Signup Checkbox -->
+              <div class="signup">
+                <input type="checkbox" name="subscribe" id="newsletter">
+                <label for="newsletter">Please subscribe me to the monthly newsletter</label>
+              </div>
             </fieldset>
+          
+            <!-- Submit Button -->
             <button type="submit" class="submit">Message us</button>
-        </form>
+          </form>
         <div class="address">
             <div class="add-phone">
                 <address>525 S Center St,<br> Abeokuta, Ogun state 83460</address>
