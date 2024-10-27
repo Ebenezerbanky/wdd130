@@ -1,47 +1,91 @@
-<!----Last modify 28/09/2024-->
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,intial-scale=1.0">
-  <title>Bankole Ebenezer | WDD 130</title>
-  <meta name="description" content="Bankole Ebenezer">
-  <meta name="author" content="Bankole Ebenezer">
-  <link rel="stylesheet" href="styles/rafting.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page | Naja Rafting</title>
+    <meta name="description" content="My rafting-site-homepage">
+    <meta name="author" content="Bankole Ebenezer">
+    <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
 <body>
-  <header>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="wwr">Rafting site</a>
-      <a href="about.html">Rafting Site Plan</a>
-      <a href="https://linkedin.com">linkedin</a>
-      <a href="https://facebook.com">Facebook</a>
-    </nav>
-  </header>
-  <main>
-    <h1>Bankole Ebenezer | WDD 130</h1>
-    <img src="images/profile.jpg" alt="Hello, my name is Bankole Ebenezer" width="200">
-    <p>Hello ! My name is Bankole Ebenezer and i am from Nigeria
-      I enjoy riding bycycle and having fun chatting
-      with frieds, i love coding.
-    </p>
-    <p>I am looking forward to learn things new things this semester</p>
-    <ul class="box indent">
-      <li><a href="https://newsroom.churchofjesuschrist.org/article/aba-nigeria-temple" target="_blank">Aba Nigeria Temple</a></li>
-      <li><a href="https://newsroom.churchofjesuschrist.org/article/accra-ghana-temple" target="_blank">Accra Ghana Temple</a></li>
-      <li><a href="https://newsroom.churchofjesuschrist.org/article/dallas-texas-temple" target="_blank">Dallas Texas Temple</a></li>
-    </ul>
-  
-  </main>
-  <aside class="box">
-    <h2>Abeokuta</h2>
-    <img src="images/abeokuta.jpg" alt="Abeokuta city">
-    <p>Abeokuta is located in Ogun State, a city with alot of stones</p>
-  </aside>
-  <footer>
-    <p> ©️ 2024 🌴Bankole Ebenezer 🌴 Nigeria</p>
-  </footer>
- </body>
-</html> 
+    <header>
+        <img src="images/templogo.webp" alt="Site Logo" class="logo">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About US</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+    <main class="grid">
+        <div class="hero cols12 grid">
+            <img class="hero-img cols12 rows8" src="images/rafting33_600.webp"
+                alt="People enjoying white water rafting">
+            <h1 class="home-title cols4-9 row2">Have An Adventure</h1>
+            <h2 class="home-subtitle cols4-9 row3">Garther some fun with naija</h2>
+            <a class="button-box cols4-9 row4 book" href="contact.html">Book Now</a>
+        </div>
+        <section class="card rivers-card">
+            <img class="card-img" src="images/rafting42_600.webp" alt="river in forest">
+            <img class="icon" src="images/rafting42_600.webp" alt="river icon">
+            <p class="card-caption">Bishop</p>
+        </section>
+        <section class="card camping-card">
+            <img class="card-img" src="images/rafting65_600.webp" alt="tent in mountains">
+            <img class="icon" src="images/rafting65_600.webp" alt="fire icon">
+            <p class="card-caption">Uncle</p>
+        </section>
+        <section class="card rapids-card">
+            <img class="card-img" src="images/salmon-kayak5.webp" alt="rafting boat">
+            <img class="icon" src="images/salmon-kayak5.webp" alt="oars icon">
+            <p class="card-caption">Naija</p>
+        </section>
+        <div class="background"></div>
+        <img class="mountains" src="images/river-narrow.webp" alt="Misty mountains">
+        <section class="msg">
+            <h2 class="msg-title">More Than Just The Thrill</h2>
+            <p> Enjoy the breathtaking scenery. From valleys, meadows, canyons, and high peaks; it's
+                way more than just the rapids. It's a great way to get away from it all and relax
+                amongst all the beauty of the great outdoors. </p>
+            <a class="button-box" href="contact.html">Join Us</a>
+        </section>
+        <div class="newsletter">
+            <p>Sign up for our monthly newsletter</p>
+            <form action="#" class="newsletter-form">
+                <div class="field-grid">
+                    <label for="email">Enter your e-mail:</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <button type="submit" class="button-box">Sign-up</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; <span id="demo"></span> Dry Oar</p>
+        <a href="#open-modal" class="footer-menu">Wireframe</a>
+        <nav class="sociallinks">
+            <a href="https://www.facebook.com/profile.php?id=100080861707819" target="_blank">
+                <img src="images/bxl-facebook.svg" alt="Facebook icon">
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <img src="images/bxl-twitter.svg" alt="twitter icon">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="images/bxl-instagram-alt.svg" alt="Instagram Icon">
+            </a>
+        </nav>
+    </footer>
+   
+    <!--Modal -->
+    <div id="open-modal" class="modal-window">
+        <div>
+            <a href="#" title="Close" class="modal-close">Close</a>
+            <img src="images/rafting-site-homepage.webp" alt="full size wireframe">
+        </div>
+    </div>
+
+</body>
+</html>

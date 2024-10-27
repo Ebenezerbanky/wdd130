@@ -127,7 +127,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
-    background-color: #242321;
+    background-color: #170b6e;
     margin-top: 100px;
 }
 
@@ -170,6 +170,149 @@ footer p {
 .hero>img {
     display: block;
     width: 100%;
+}
+
+/* Homepage Styling */
+.hero-msg {
+    justify-content: center;
+}
+
+.home-title {
+    margin: 50px 0 20px 0;
+    color: var(--white);
+    background-color: #13181475;
+    justify-self: center;
+}
+
+.home-subtitle {
+    margin: 20px 0;
+    color: var(--white);
+    background-color: #13181475;
+    justify-self: center;
+}
+
+.newsletter {
+    grid-column: 4/9;
+    grid-row: 9/11;
+    justify-self: center;
+    justify-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 1em 0;
+}
+
+.newsletter-form {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--accent1-color);
+    color: var(--white);
+    margin: 1em 0;
+    padding: 1em 0;
+}
+
+.newsletter p {
+    justify-self: center;
+    font-size: 1.5em;
+    color: var(--black);
+    margin: 1em 0 0 0;
+}
+
+.newsletter-form .field-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 10px;
+    margin: 1em;
+    align-items: center;
+}
+
+.newsletter-form label {
+    grid-column: 1;
+    grid-row: 1;
+    text-align: right;
+    color: var(--white);
+    margin: 0;
+}
+
+.newsletter-form input {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.newsletter-form button {
+    background-color: var(--button-color);
+    padding: .5em 1em
+}
+
+.newsletter-form button:hover {
+    background-color: var(--button-color-hover);
+}
+
+.card {
+    margin: 100px 0;
+    grid-row: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.rapids-card {
+    grid-column: 2 / 4;
+    grid-row: 2;
+}
+
+.camping-card {
+    grid-column: 6/8;
+    grid-row: 2;
+}
+
+.rivers-card {
+    grid-column: 10/12;
+    grid-row: 2;
+}
+
+.card-img {
+    border: 10px solid #fff;
+    width: 100%;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #6f7364;
+    margin: 20px 0;
+}
+
+.icon {
+    width: 80px;
+}
+
+.card-caption {
+    font-size: 1.4rem;
+}
+
+.background {
+    background-color: var(--secondary-color);
+    height: 700px;
+    grid-column: 1/13;
+    grid-row: 3/9;
+}
+
+.mountains {
+    grid-column: 2/8;
+    grid-row: 3/9;
+}
+
+.msg {
+    grid-column: 7/12;
+    grid-row: 5/7;
+    color: var(--white);
+    background-color: var(--white);
+    padding: 35px;
+    box-shadow: 5px 5px 10px #6f7364;
+    line-height: 1.5em;
+    display: flex;
+    flex-direction: column;
+}
+
+.msg-title {
+    line-height: 1em;
 }
 
 
@@ -424,4 +567,60 @@ fieldset {
     grid-column: 1/-1;
 
 }
+
+.trips-grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 1em 5px;
+    margin: 50px auto;
+}
+
+.trips-table {
+    grid-column: 1/-1;
+    grid-row: 2/4;
+}
+
+.trips-table h2 {
+    grid-column: 1/-1;
+    grid-row: 1;
+    justify-self: center;
+}
+
+
+
+.trip-duration {
+    grid-column: 1;
+}
+
+.trip-cost {
+    grid-column: 2;
+}
+
+.trip-name {
+    grid-column: 3;
+}
+
+.trip-cost:nth-of-type(even),
+.trip-duration:nth-of-type(odd),
+.trip-name:nth-of-type(odd) {
+    background-color: #153f8c;
+}
+
+.trip-cost:nth-of-type(odd),
+.trip-duration:nth-of-type(even),
+.trip-name:nth-of-type(even) {
+    background-color: #7a0909;
+}
+
+.table-heading {
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.25em;
+    letter-spacing: 1px;
+}
+
+.trips {
+    gap: 50px;
+}
+
 
