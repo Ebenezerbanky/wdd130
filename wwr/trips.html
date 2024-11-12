@@ -4,90 +4,175 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trips | Naija Rafting</title>
-    <meta name="description" content="My trip page for the rafting site.">
+    <title>Trips Us | Eben-Dev Rafting</title>
+    <meta name="description" content="This is the contact us page for the rafting site.">
     <meta name="author" content="Bankole Ebenezer">
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
 <body>
+
     <header>
         <img src="images/templogo.webp" alt="Site Logo" class="logo">
         <nav>
             <a href="index.html">Home</a>
-            <a href="about.html">About US</a>
+            <a href="about.html">About Us</a>
             <a href="trips.html">Trips</a>
             <a href="contact.html">Contact Us</a>
         </nav>
     </header>
+    <!-- This sets a 12 column grid on the main element. The cols12 class in the child
+     elements are telling those to use the full width of the grid. This was done on purpose 
+     to demonstrate a grid within a grid layout. -->
+
     <main class="grid">
         <div class="grid cols12 hero">
-            <img class="cols12 rows8" src="images/river-narrow.webp" alt="trips">
-           
-            <h1 class="home-title cols4-10 row2">Naija Whitewater Rafting Trips</h1>
+            <img class="cols12 rows8" src="images/rafting33_600.webp" alt="trips">
+            <a class="button-box cols4-10 row3" href="contact.html">Contact Us</a>
+            <h1 class="home-title cols4-10 row2">Whitewater Rafting Trips</h1>
         </div>
+
+        <!-- This is not the correct HTML for the assignment. You cannot copy this. -->
         <section class="trips-table trips-grid">
-            <h2>Rafting Details</h2>
+            <h2>Rafting Trips Summary</h2>
             <p class="trip-duration table-heading">Trip Length</p>
-            <p class="trip-cost table-heading">Amount</p>
-            <p class="trip-name table-heading">Info</p>
-            <p class="trip-duration row1-color">Firstday</p>
-            <p class="trip-cost row1-color">$100</p>
-            <p class="trip-name row1-color">Bishop James Adventure</p>
-            <p class="trip-duration row2-color">Second day</p>
-            <p class="trip-cost row2-color">$200</p>
-            <p class="trip-name row2-color">Uncle samuel</p>
-            <p class="trip-duration">Third day</p>
-            <p class="trip-cost">$300</p>
-            <p class="trip-name">Rock naija</p>
-            <p class="trip-duration">Fouth day</p>
-            <p class="trip-cost">$400</p>
-            <p class="trip-name">Peace seater</p>
-        
-            
+            <p class="trip-cost table-heading">Cost</p>
+            <p class="trip-name table-heading">Trip Name</p>
+            <p class="trip-duration row1-color">1/2 Day Class 1</p>
+            <p class="trip-cost row1-color">$300</p>
+            <p class="trip-name row1-color">Lazy Family Adventure</p>
+            <p class="trip-duration row2-color">1/2 Day Class 2</p>
+            <p class="trip-cost row2-color">$500</p>
+            <p class="trip-name row2-color">Family Teenage Children</p>
+            <p class="trip-duration">1 Day Class 1</p>
+            <p class="trip-cost">$600</p>
+            <p class="trip-name">Scenic Relaxing Adventure</p>
+            <p class="trip-duration">1 Day Class 2</p>
+            <p class="trip-cost">$700</p>
+            <p class="trip-name">Adventure with Class 2 Rapids</p>
+            <p class="trip-duration">2 Day Class 1</p>
+            <p class="trip-cost">$1000</p>
+            <p class="trip-name">Relaxing Extended Scenic Adventure</p>
+            <p class="trip-duration">2 Day Class 3</p>
+            <p class="trip-cost">$1200</p>
+            <p class="trip-name">Adventure with Class 3 Rapids</p>
         </section>
+
+        <!-- This div displays the images and trip info in alternating rows  to give teh staggard look. -->
         <div class="trips grid cols12">
-            <figure class="trip1 cols2-7 rows1-3">
-                <img src="images/rafting33_600.webp" alt="Adventure1">
-                <figcaption>Adventure1</figcaption>
-            </figure>
-            <figure class="trip2 cols7-12 rows2-4">
-                <img src="images/rafting42_600.webp" alt=" 1 Day Adventure-Class 2">
-                <figcaption>Adventure2</figcaption>
-            </figure>
-            <figure class="trip3 cols2-7 rows3-5">
+            <h2 class="cols12 row1 center">Rafting Trip Details</h2>
+            <article class="trips-card cols2-7 rows2-4">
+
+                <img src="images/rafting42_600.webp" alt="1/2 Day Adventure-Class 1">
+
+                <div class="trips-card-content">
+                    <h2>Lazy Family Adventure</h2>
+                    <p><span class="bold">Location:</span> Idaho</p>
+                    <p><span class="bold">Adventure Level: </span>Easy to Moderate</p>
+                    <p><span class="bold">Minimum Age:</span> 8 (12 during high water)</p>
+                </div>
+                <footer class="price-footer">
+                    <span class="pricing">From: </span><span class="price-font">$300</span>
+                </footer>
+            </article>
+            <article class="trips-card cols7-12 rows3-5">
+
+                <img src="images/rafting65_600.webp" alt=" 1 Day Adventure-Class 2">
+
+                <div class="trips-card-content">
+                    <h2>Family Teenage Children</h2>
+                    <p><span class="bold">Location:</span> Nigeria</p>
+                    <p><span class="bold">Adventure Level: </span>Easy</p>
+                    <p><span class="bold">Minimum Age:</span> 5 (9 during high water)</p>
+                </div>
+                <footer class="price-footer">
+                    <span class="pricing">From: </span><span class="price-font">$500</span>
+                </footer>
+            </article>
+            <article class="trips-card cols2-7 rows4-6">
+
                 <img src="images/rafting64_600.webp" alt="1/2 Day Adventure-Class 2">
-                <figcaption>Adventure3</figcaption>
-            </figure>
-            <figure class="trip4 cols7-12 rows4-6">
-                <img src="images/rafting65_600.webp" alt="2 Day Adventure-Class 1">
-                <figcaption>Aventure4</figcaption>
-            </figure>
-            <figure class="trip5 cols2-7 rows5-7">
-                <img src="images/river-narrow.webp" alt="1 Day Adventure-Class 3">
-                <figcaption>Adventure5</figcaption>
-            </figure>
-            <figure class="trip6 cols7-12 rows6-8">
-                <img src="images/salmon-kayak5.webp" alt="2 Day Adventure-Class 3">
-                <figcaption>Adventure6</figcaption>
-            </figure>
+
+                <div class="trips-card-content">
+                    <h2>Scenic Relaxing Adventure</h2>
+                    <p><span class="bold">Location:</span> Nieria</p>
+                    <p><span class="bold">Adventure Level: </span>Moderate</p>
+                    <p><span class="bold">Minimum Age:</span> 10</p>
+                </div>
+                <footer class="price-footer">
+                    <span class="pricing">From: </span><span class="price-font">$600</span>
+                </footer>
+            </article>
+            <article class="trips-card cols7-12 rows5-7">
+
+                <img src="images/rafting33_600.webp" alt="2 Day Adventure-Class 1">
+
+                <div class="trips-card-content">
+                    <h2>Adventure with Class 2 Rapids</h2>
+                    <p><span class="bold">Location:</span> Nigeria</p>
+                    <p><span class="bold">Adventure Level: </span>Moderately Challenging</p>
+                    <p><span class="bold">Minimum Age:</span> 14</p>
+                </div>
+                <footer class="price-footer">
+                    <span class="pricing">From: </span><span class="price-font">$300</span>
+                </footer>
+            </article>
+            <article class="trips-card cols2-7 rows6-8">
+
+                <img src="images/rafting65_600.webp" alt="1 Day Adventure-Class 3">
+
+                <div class="trips-card-content">
+                    <h2>Relaxing Extended Scenic Adventure</h2>
+                    <p><span class="bold">Location:</span> Nigeria</p>
+                    <p><span class="bold">Adventure Level: </span>Moderate</p>
+                    <p><span class="bold">Minimum Age:</span> 14</p>
+                </div>
+                 <footer class="price-footer">
+                    <span class="pricing">From: </span><span class="price-font">k1000</span>
+                </footer>
+            </article>
+            <article class="trips-card cols7-12 rows7-9">
+
+                <img src="images/river-narrow.webp" alt="2 Day Adventure-Class 3">
+                <div class="trips-card-content">
+                    <h2>Adventure with Class 3 Rapids</h2>
+                    <p><span class="bold">Location:</span> Idaho</p>
+                    <p><span class="bold">Adventure Level: </span>Challenging</p>
+                    <p><span class="bold">Minimum Age:</span> 16</p>
+                </div>
+                 <footer class="price-footer">
+                    <span class="pricing">From: </span><span class="price-font">k1200</span>
+                </footer>
+            </article>
         </div>
+
     </main>
     <footer>
-        <p>&copy; <span id="demo"></span> Naija Rafting</p>
-            <a href="https://drive.google.com/file/d/1fb3XqltHNtLBl0U2xLkLOUhzKkLaElQ2/view?usp=sharing" target="_blank" class="footer-menu">Wireframe</a>
-           <nav class="sociallinks">
-            <a href="https://www.facebook.com/profile.php?id=100080861707819" target="_blank">
-                <img src="images/bxl-facebook.svg" alt="Facebook icon">
+        <p>&copy; <span id="demo"></span> Eben-Dev</p>
+        <a href="#open-modal" class="footer-menu">Wireframe</a>
+        <nav class="sociallinks">
+            <a href="https://facebook.com" target="_blank">
+                <img src="images/facegook.svg" alt="Facebook icon">
             </a>
             <a href="https://twitter.com" target="_blank">
-                <img src="images/bxl-twitter.svg" alt="twitter icon">
+                <img src="images/x-twiiter.svg" alt="X icon">
             </a>
             <a href="https://instagram.com" target="_blank">
-                <img src="images/bxl-instagram-alt.svg" alt="Instagram Icon">
+                <img src="images/instagram.svg" alt="Instagram Icon">
             </a>
         </nav>
     </footer>
-           
+    <script>
+        const date = new Date(document.lastModified);
+        document.getElementById("demo").innerHTML = date.getFullYear();
+    </script>
+    <!--Modal -->
+    <div id="open-modal" class="modal-window">
+        <div>
+            <a href="#" title="Close" class="modal-close">Close</a>
+            <img src="images/rafting-site-trips.webp" alt="full size wireframe">
+        </div>
+    </div>
+
 </body>
 </html>
